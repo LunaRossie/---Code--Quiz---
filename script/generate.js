@@ -3,7 +3,7 @@ let ans = "", question ="", input="", width= 220, t = '', n1, n2, n3, r1, r2, mo
 let opr = [];
 
 $(document).ready(function() {
-    $("quizbody").hide();
+    $("#quizbody").hide();
 });
 
 function level(lvl) {
@@ -22,13 +22,13 @@ function level(lvl) {
         lim = 50;
         opr = ["+", "-", "*", "*"];
     }
-    $("diff").hide();
-    $("quizbody").show();
+    $("#diff").hide();
+    $("#quizbody").show();
     if (mode==1) {
-        $("donebtn").hide();
+        $("#donebtn").hide();
     }
     else {
-        $("donebtn").show();
+        $("#donebtn").show();
     }
     quiz();
 }
@@ -42,12 +42,12 @@ function quiz() {
     r2 = opr[Math.floor(Math.random()*len)];    
     question = n1+r1+n2+r2+n3;
     ans = eval(question);
-    $("question").html(question+" = ?");
+    $("#question").html(question+" = ?");
     t = setInterval(timeCheck, 120);
 }
 
 function check() {
-    let input = $("answer").val();
+    let input = $("#answer").val();
     if(input == ans) {
         Swal.fire({
           icon: 'success',
@@ -57,7 +57,7 @@ function check() {
           timer: 1500
         });
         correct++;
-        $("correct").html(correct);
+        $("#correct").html(correct);
     }
     else {
         Swal.fire({
@@ -68,13 +68,13 @@ function check() {
           timer: 1500
         });
         wrong++;
-        $("wrong").html(wrong);
+        $("#wrong").html(wrong);
     } 
-    $("answer").val('');
+    $("#answer").val('');
     count++;
     total++;
-    $("no").html(count);
-    $("total").html(total);
+    $("#no").html(count);
+    $("#total").html(total);
     clearInterval(t);
     width = 220;
     bar.style.width = '200px';
@@ -82,15 +82,15 @@ function check() {
 }
 
 function ins(num) {
-    let chk = $("answer").val().includes(".");
-    if ($("answer").val() != '' && num == '-' || num == "." && chk)
+    let chk = $("#answer").val().includes(".");
+    if ($("#answer").val() != '' && num == '-' || num == "." && chk)
     {
     }
     
     else {
-      $("answer").val($("answer").val() + num);
+      $("#answer").val($("#answer").val() + num);
       if (mode==1) {
-          if ($("answer").val() ==ans)
+          if ($("#answer").val() ==ans)
               check();
       }
     }      
@@ -107,7 +107,7 @@ function timeCheck() {
           timer: 1500
         });
         wrong++;
-        $("wrong").html(wrong);
+        $("#wrong").html(wrong);
     quiz();
     width = 220;
     bar.style.width = '200px';
@@ -119,23 +119,23 @@ function timeCheck() {
 }
 $(function() {
 
-    $("res").click(function() {
-        $("diff").show();
-        $("quizbody").hide();
+    $("#res").click(function() {
+        $("#diff").show();
+        $("#quizbody").hide();
         count=1, total=0, correct=0, wrong=0, lim=0;
-        $("correct").html(correct);
-        $("wrong").html(wrong);
-        $("total").html(total);
+        $("#correct").html(correct);
+        $("#wrong").html(wrong);
+        $("#total").html(total);
         input.value = "";
         clearInterval(t);
         width = 220;
         bar.style.width = '200px';
     });
     
-    $("del").click(function() {
-        let txt = $("answer").val();
+    $("#del").click(function() {
+        let txt = $("#answer").val();
         txt = txt.slice(0, -1);
-        $("answer").val(txt);
+        $("#answer").val(txt);
     });
    
 

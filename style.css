@@ -19,7 +19,9 @@ question {
 button, input {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    border-radius: 0rem;
+    border-radius: 2rem;
+    box-sizing: content-box;
+    margin: 20px;
     
 }
 input {
@@ -32,7 +34,7 @@ input {
     margin: 8px;
     border-radius: 10px;
 }
-body button {
+quizbody button {
     height: 30px;
     margin: 10px;
     font-size: 20px;
@@ -65,7 +67,7 @@ result {
     margin-left: auto;
 }
 .titlebar img {
-    height: 25px;
+    height: 15px;
     width: 25px;
     float:left;
     padding-top: 7px;
@@ -92,7 +94,7 @@ count span {
     border-radius: 6rem;
 }
 logo {
-    font-size: 60px;
+    font-size: 30px;
     font-weight: bold;
 }
 nums button {
@@ -102,6 +104,8 @@ nums button {
     text-decoration: overline;
     text-align: center;
     background-position: left;
+    border-radius: 2px;
+    text-align: inherit;
     
 }
 timer, bar {
