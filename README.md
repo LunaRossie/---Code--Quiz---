@@ -19,7 +19,7 @@ The user must create a basic repository, and clone the repo to vscode. JavaScrip
 
 ## Github
 
-https://github.com/LunaRossie/--Code-Quiz--
+https://github.com/LunaRossie/---Code--Quiz---
 
 ## Deployed Website
 
@@ -36,7 +36,7 @@ https://github.com/LunaRossie/--Code-Quiz--
 
  ## Questions
 
-If you have any questions regarding this project, please reach out via email "Terminalbash2022@outlook.com". https://github.com/LunaRossie/--Code-Quiz--
+If you have any questions regarding this project, please reach out via email "Terminalbash2022@outlook.com". https://github.com/LunaRossie/---Code--Quiz---
 
 
 ## Mock-Up

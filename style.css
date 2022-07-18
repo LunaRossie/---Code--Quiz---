@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    background: linear-gradient(80deg, #cf0dc2 19%, rgba(18,182,231,1) 93%);
+    color:#ffffff;
+    border-radius: 2rem;
+}
+.img src {
+    background-position: 6rem;
+    top: 20px;
+    transform: matrix3d();
+}
+question {
+    font-size: 20px;
+    font-weight: bold;
+}
+button, input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border-radius: 0rem;
+    
+}
+input {
+    height: 42px;
+    font-size: 30px;
+    width: 150px;
+    text-align: center;
+    color: rgba(13,120,207,1);
+    border: 2px solid white;
+    margin: 8px;
+    border-radius: 10px;
+}
+body button {
+    height: 30px;
+    margin: 10px;
+    font-size: 20px;
+    width: auto;
+    background-color: antiquewhite;
+    font-weight: bolder;
+    border: 3px; 
+    border-radius: 20px;
+}
+diff button {
+    background-color: beige;
+    font-size: 21px;
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+serial {
+    font-weight: bolder;
+    background-color: bisque;
+    font-size: 25px;
+}
+result {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.titlebar {
+    margin-left: auto;
+}
+.titlebar img {
+    height: 25px;
+    width: 25px;
+    float:left;
+    padding-top: 7px;
+}
+count {
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 2px;
+    color: rgba(13,120,207,1);
+    border-radius: 10px;
+    width: 65px;
+    display: inline-block;
+    height: 35px;
+    text-align:right;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: #dbdbdb;
+    font-weight: bold;
+}
+count span {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    border-radius: 6rem;
+}
+logo {
+    font-size: 60px;
+    font-weight: bold;
+}
+nums button {
+    height: 44px;
+    width: 44px;
+    font-size: 23px;
+    text-decoration: overline;
+    text-align: center;
+    background-position: left;
+    
+}
+timer, bar {
+    height: 10px;
+    width: 220px;
+    text-decoration: line-through;
+    transition: all;
+    text-shadow: lemonchiffon;
+}
+timer {
+    background-color: transparent;
+    border: 1px solid white;
+}
+bar {
+    background-color: white;
+    position: relative;
+    float: left;
+}
+input:focus, button:focus {
+    outline: 0;
+    outline-color: transparent;
+    outline-style: none;
+}
