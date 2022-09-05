@@ -46,30 +46,7 @@ function quiz() {
     t = setInterval(timeCheck, 120);
 }
 
-function check() {
-    let input = $("#answer").val();
-    if(input == ans) {
-        Swal.fire({
-          icon: 'success',
-          title: 'Correct',
-          text: ans + ' is correct.',
-          showConfirmButton: false,
-          timer: 1500
-        });
-        correct++;
-        $("#correct").html(correct);
-    }
-    else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Wrong',
-          text: 'The answer is '+ans,
-          showConfirmButton: false,
-          timer: 1500
-        });
-        wrong++;
-        $("#wrong").html(wrong);
-    } 
+
     $("#answer").val('');
     count++;
     total++;
@@ -79,7 +56,7 @@ function check() {
     width = 220;
     bar.style.width = '200px';
     quiz();
-}
+
 
 function ins(num) {
     let chk = $("#answer").val().includes(".");
@@ -99,7 +76,7 @@ function timeCheck() {
     let bar = document.getElementById("bar");
     if(width == 0) {
         clearInterval(t);
-        Swal.fire({
+        ({
           icon: 'warning',
           title: 'Timeout',
           text: 'The answer is '+ans,
